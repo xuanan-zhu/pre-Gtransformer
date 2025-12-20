@@ -171,10 +171,10 @@ if args.net =="clsDNA":
         vocab = 40,
         seq_len= 2277,
         num_classes = 2,
-        dim = int(64),
+        dim = int(128),
         depth = 4,
         heads = 4,
-        mlp_dim = 128,
+        mlp_dim = 256,
         dropout = 0.6,
         emb_dropout = 0.6,
         get_last_feature= False,
@@ -421,4 +421,5 @@ with open(checkpoint_path + "val_auc.txt".format(args.fold, datasetX), "w") as f
 # plt.legend()
 
 # plt.savefig(checkpoint_path+'output.png')
+
 # # plt.show()
